@@ -4,13 +4,25 @@
 
 Define the safety checklist that every repository must pass before becoming a public Logline export.
 
-## Status values
+## Public readiness status values
+
+Use these values for the final publication decision:
 
 BLOCKED
 
 NEEDS_CLEANUP
 
 READY
+
+## Cleanup finding status values
+
+Use these values for individual checklist findings:
+
+BLOCKER
+
+WARNING
+
+OK
 
 ## Secrets
 
@@ -25,6 +37,10 @@ Check for:
 - passwords
 - Wi-Fi credentials
 
+Finding status:
+
+BLOCKER / WARNING / OK
+
 ## Network / deployment details
 
 Check for:
@@ -37,6 +53,10 @@ Check for:
 - local absolute paths
 - deployment maps
 - operational runbooks
+
+Finding status:
+
+BLOCKER / WARNING / OK
 
 ## Files and artifacts
 
@@ -53,6 +73,10 @@ Check for:
 - EXIF metadata
 - generated outputs
 
+Finding status:
+
+BLOCKER / WARNING / OK
+
 ## Git history
 
 Check:
@@ -61,6 +85,10 @@ Check:
 - old commits do not contain removed images
 - old commits do not contain configs
 - repo was created as clean export if history is unsafe
+
+Finding status:
+
+BLOCKER / WARNING / OK
 
 ## Documentation
 
@@ -75,9 +103,13 @@ Check:
 - Next questions are listed
 - Known failures are documented
 
+Finding status:
+
+BLOCKER / WARNING / OK
+
 ## Decision
 
-Final status:
+Final public readiness status:
 
 BLOCKED / NEEDS_CLEANUP / READY
 
@@ -96,3 +128,5 @@ If sensitive files were in history, clean export is preferred over risky history
 Do not publish working directories directly.
 
 Public Logline repositories are curated exports.
+
+If any finding is `BLOCKER`, final public readiness should be `BLOCKED` or `NEEDS_CLEANUP` until the blocker is removed or explicitly accepted with a documented reason.
