@@ -9,12 +9,18 @@ Define the minimum checks a Logline repository must pass before it can be treate
 - Flagship
 - Release-ready
 
+Quality gates are not labels for promotion.
+
+They are evidence checks.
+
 ## Public-ready gate
 
 Required checks:
 
 - README exists
-- Current status is explicit
+- Repository status is explicit
+- Public readiness status is explicit
+- Trust level is explicit when claims or results are presented
 - Safety / security notes exist
 - No secrets
 - No private IPs
@@ -25,7 +31,14 @@ Required checks:
 - Public export status is clear
 - Foundation link exists
 - Repository map exists
+- Known limitations exist
 - Next questions exist
+
+Minimum evidence:
+
+- Cleanup checklist completed or clearly summarized
+- README states what was sanitized or excluded
+- Any non-reproducible part is named directly
 
 ## Pinned repository gate
 
@@ -36,8 +49,13 @@ Additional checks:
 - Project is understandable in 30 seconds
 - At least one experiment record exists
 - Architecture is documented
-- Issues show next work
+- Issues or README show next work
 - README explains relation to Logline
+- Known failures are documented if they affected the current design
+
+Minimum evidence:
+
+- One reader can understand the repository purpose, safety boundary, and next question from the README alone
 
 ## Flagship repository gate
 
@@ -51,6 +69,11 @@ Additional checks:
 - Reproducibility path exists
 - Related repositories are linked
 - No misleading production-ready claims
+- Important decisions are traceable through decision records or README notes
+
+Minimum evidence:
+
+- The repository shows an engineering path, not just a final code snapshot
 
 ## Release-ready gate
 
@@ -59,13 +82,18 @@ Must pass Public-ready gate.
 Additional checks:
 
 - Version is meaningful
-- Changelog is updated
+- Changelog or release notes are updated
 - Setup is reproducible
 - Known limitations are listed
 - Release does not include secrets, logs, or private configs
 - Release notes explain what was tested
+- Release notes explain what was not tested
 
-## Cleanup status
+Minimum evidence:
+
+- A reader can reproduce the safe public version without private infrastructure
+
+## Public readiness status
 
 Allowed values:
 
@@ -75,6 +103,10 @@ NEEDS_CLEANUP
 
 READY
 
+Use these values only for the final public readiness decision.
+
+For individual cleanup findings, use the cleanup finding statuses from `STATUS_TAXONOMY.md`.
+
 ## Rules
 
 Do not promote a repository by feeling.
@@ -83,4 +115,6 @@ Use gates.
 
 If a gate fails, document why.
 
-If safety is uncertain, status is BLOCKED or NEEDS_CLEANUP.
+If safety is uncertain, public readiness status is BLOCKED or NEEDS_CLEANUP.
+
+If evidence is missing, do not upgrade the gate.
