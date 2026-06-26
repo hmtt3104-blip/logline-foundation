@@ -61,7 +61,7 @@ Current and planned Logline repositories:
 
 - logline-greenhouse-ai
 - logline-greenhouse-edge
-- future logline-greenhouse-firmware
+- logline-greenhouse-firmware
 - future logline-calcocr
 
 ## Working principle
