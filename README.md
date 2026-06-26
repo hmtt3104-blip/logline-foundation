@@ -96,4 +96,4 @@ These standards are allowed to evolve, but changes should be documented through 
 
 ## License
 
-To be added.
+MIT License. See [LICENSE](LICENSE).
