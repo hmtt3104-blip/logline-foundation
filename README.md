@@ -26,16 +26,25 @@ Problem → Hypothesis → Experiment → Data → Conclusion → Next question
 
 ## Repository contents
 
-Initial foundation documents to add next:
+Current foundation documents:
 
-- LOG_LINE_CONSTITUTION.md
-- EXPERIMENT_RECORD_TEMPLATE.md
 - DECISION_RECORD_STANDARD.md
-- STATUS_TAXONOMY.md
+- EXPERIMENT_RECORD_TEMPLATE.md
+- LOG_LINE_CONSTITUTION.md
+- PUBLIC_REPO_CLEANUP_CHECKLIST.md
 - QUALITY_GATE.md
 - README_TEMPLATE.md
+- STATUS_TAXONOMY.md
+
+Planned documents:
+
 - SECURITY_TEMPLATE.md
-- PUBLIC_REPO_CLEANUP_CHECKLIST.md
+- CONTRIBUTING_TEMPLATE.md
+- ROADMAP_TEMPLATE.md
+- REPOSITORY_RELATIONSHIPS.md
+- RFC_STANDARD.md
+- ENGINEERING_GLOSSARY.md
+- NAMING_STANDARD.md
 
 ## Used by
 
