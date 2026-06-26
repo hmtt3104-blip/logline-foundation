@@ -10,31 +10,40 @@ This repository does not publish product code.
 
 It publishes the methodology behind the code.
 
-Logline Foundation contains standards for:
-
-- engineering experiment records;
-- architectural decisions;
-- repository structure;
-- documentation style;
-- public export safety;
-- reproducibility;
-- quality gates.
+Logline Foundation exists so every public Logline repository can be read as part of the same engineering journal: what problem was tested, what was built, what failed, what was learned, and what should be asked next.
 
 ## Core method
 
 Problem → Hypothesis → Experiment → Data → Conclusion → Next question
 
+## Start here
+
+Use these documents first:
+
+1. [Logline Constitution](LOG_LINE_CONSTITUTION.md) — baseline principles for public Logline work.
+2. [README Template](README_TEMPLATE.md) — standard public repository landing page structure.
+3. [Public Repository Cleanup Checklist](PUBLIC_REPO_CLEANUP_CHECKLIST.md) — safety review before publication.
+4. [Quality Gate](QUALITY_GATE.md) — promotion criteria for public-ready, pinned, flagship, and release-ready repositories.
+5. [Status Taxonomy](STATUS_TAXONOMY.md) — shared language for repository, experiment, decision, RFC, cleanup, and trust states.
+
+Then use the record templates when documenting work:
+
+- [Experiment Record Template](EXPERIMENT_RECORD_TEMPLATE.md)
+- [Decision Record Standard](DECISION_RECORD_STANDARD.md)
+
 ## Repository contents
 
 Current foundation documents:
 
-- DECISION_RECORD_STANDARD.md
-- EXPERIMENT_RECORD_TEMPLATE.md
-- LOG_LINE_CONSTITUTION.md
-- PUBLIC_REPO_CLEANUP_CHECKLIST.md
-- QUALITY_GATE.md
-- README_TEMPLATE.md
-- STATUS_TAXONOMY.md
+| Document | Role |
+| --- | --- |
+| [LOG_LINE_CONSTITUTION.md](LOG_LINE_CONSTITUTION.md) | Principles and scope for public Logline repositories. |
+| [README_TEMPLATE.md](README_TEMPLATE.md) | Standard README structure for public exports. |
+| [PUBLIC_REPO_CLEANUP_CHECKLIST.md](PUBLIC_REPO_CLEANUP_CHECKLIST.md) | Safety checklist before a repository becomes public. |
+| [QUALITY_GATE.md](QUALITY_GATE.md) | Minimum checks for public-ready, pinned, flagship, and release-ready states. |
+| [STATUS_TAXONOMY.md](STATUS_TAXONOMY.md) | Controlled status language used across repositories. |
+| [EXPERIMENT_RECORD_TEMPLATE.md](EXPERIMENT_RECORD_TEMPLATE.md) | Template for documenting one engineering experiment. |
+| [DECISION_RECORD_STANDARD.md](DECISION_RECORD_STANDARD.md) | Standard format for architectural and process decisions. |
 
 Planned documents:
 
@@ -71,11 +80,19 @@ Every public Logline repository should explain:
 - what decision followed;
 - what question comes next.
 
+## Change rule
+
+Foundation standards may evolve, but meaningful changes should be traceable.
+
+Use decision records when a change affects repository structure, safety policy, public readiness, status language, or the way Logline repositories are reviewed.
+
+Small wording fixes may be committed directly when they do not change the meaning of a standard.
+
 ## Status
 
 Working foundation.
 
-These standards are allowed to evolve, but changes should be documented through decision records.
+These standards are allowed to evolve, but changes should be documented through decision records when they change the method, not just the wording.
 
 ## License
 
