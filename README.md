@@ -95,9 +95,9 @@ Small wording fixes may be committed directly when they do not change the meanin
 
 ## Status
 
-Working foundation.
+Repository status: Working.
 
-These standards are allowed to evolve, but changes should be documented through decision records when they change the method, not just the wording.
+Foundation standards are allowed to evolve, but changes should be documented through decision records when they change the method, not just the wording.
 
 ## License
 
