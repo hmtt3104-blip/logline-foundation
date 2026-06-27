@@ -45,7 +45,9 @@ Current foundation documents:
 | [EXPERIMENT_RECORD_TEMPLATE.md](EXPERIMENT_RECORD_TEMPLATE.md) | Template for documenting one engineering experiment. |
 | [DECISION_RECORD_STANDARD.md](DECISION_RECORD_STANDARD.md) | Standard format for architectural and process decisions. |
 
-Planned documents:
+Planned documents are candidates, not mandatory backlog items. Create them only when repeated use in real Logline repositories proves that a separate standard is needed.
+
+Current candidates:
 
 - SECURITY_TEMPLATE.md
 - CONTRIBUTING_TEMPLATE.md
