@@ -57,12 +57,15 @@ Planned documents:
 
 ## Used by
 
-Current and planned Logline repositories:
+Current public Logline repositories:
 
 - logline-greenhouse-ai
 - logline-greenhouse-edge
 - logline-greenhouse-firmware
-- future logline-calcocr
+
+Planned Logline repositories:
+
+- logline-calcocr
 
 ## Working principle
 
