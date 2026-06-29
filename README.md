@@ -63,11 +63,11 @@ Current public Logline repositories:
 
 | Repository | Verified baseline | Public readiness |
 | --- | --- | --- |
-| logline-greenhouse-ai | Local-only Flask/mock-sensor smoke test passed. | NEEDS_CLEANUP |
-| logline-greenhouse-edge | Dry-run config load and tests passed. | NEEDS_CLEANUP |
-| logline-greenhouse-firmware | Arduino compile passed for ESP32S3 Dev Module. | NEEDS_CLEANUP |
+| logline-greenhouse-ai | No-hardware Flask/mock-sensor smoke test passed (`2 passed`). | NEEDS_CLEANUP |
+| logline-greenhouse-edge | No-hardware synthetic integration test passed (`5 passed`). | NEEDS_CLEANUP |
+| logline-greenhouse-firmware | Arduino compile passed; public startup-close default is disabled. | NEEDS_CLEANUP |
 
-These verified baselines prove basic reproducibility only. They do not prove production readiness, hardware safety, live greenhouse operation, authentication, LAN exposure safety, or release readiness.
+These verified baselines prove public-safe local reproducibility only. They do not prove production readiness, hardware safety, live greenhouse operation, authentication, LAN exposure safety, Raspberry Pi deployment, real Firebase/MQTT behavior, real camera behavior, or release readiness.
 
 Planned Logline repositories:
 
